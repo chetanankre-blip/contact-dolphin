@@ -1,53 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dolphin Badminton Academy</title>
 
 <style>
+
 body{
-font-family:Arial;
+font-family: Arial;
+background: linear-gradient(135deg,#0f9b0f,#2ecc71);
+margin:0;
 text-align:center;
-background:#f2f2f2;
-padding:40px;
+color:white;
 }
 
-h1{color:#008c4a;}
+.container{
+margin-top:80px;
+}
 
-button{
+h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+p{
+font-size:18px;
+margin-bottom:40px;
+}
+
+.btn{
 display:block;
-width:80%;
-max-width:320px;
+width:250px;
 margin:15px auto;
 padding:15px;
 font-size:18px;
 border-radius:10px;
-border:none;
+text-decoration:none;
 color:white;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-.whatsapp{background:#25D366;}
-.call{background:#007bff;}
-.location{background:#ff5722;}
+.call{
+background:#3498db;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.location{
+background:#e67e22;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
 
 </style>
 </head>
 
 <body>
 
-<h1>Dolphin Badminton Academy</h1>
+<div class="container">
 
-<button class="whatsapp" onclick="location.href='https://wa.me/919685444944'">
-💬 WhatsApp
-</button>
+<h1>Dolphin Badminton Academy 🏸</h1>
 
-<button class="call" onclick="location.href='tel:+919685444944'">
-📞 Call
-</button>
+<p>Join Professional Badminton Training</p>
 
-<button class="location" onclick="location.href='https://maps.app.goo.gl/m4gVLPQ3R6vcqYfv8'">
-📍 Location
-</button>
+<a class="btn call" href="tel:+919685444944">📞 Call Now</a>
+
+<a class="btn whatsapp" href="https://wa.me/919685444944?text=Hello%20I%20want%20to%20join%20Dolphin%20Badminton%20Academy">💬 WhatsApp</a>
+
+<a class="btn location" href="https://maps.app.goo.gl/m4gVLPQ3R6vcqYfv8">📍 Location</a>
+
+</div>
 
 </body>
 </html>
